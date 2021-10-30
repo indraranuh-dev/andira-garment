@@ -34,7 +34,7 @@ $(function () {
                                 <div class="card-body">
                                     <h5 class="card-title text-capitalize">${product.name}</h5>
                                     <p class="card-text" style="height: 3rem; overflow: hidden;">${product.description}</p>
-                                    <a href="${document.location.origin}/product-detail.html?id=${product.id}" class="btn btn-primary btn-block">Beli Produk</a>
+                                    <a href="./product-detail.html?id=${product.id}" class="btn btn-primary btn-block">Beli Produk</a>
                                 </div>
                             </div>
                         </div>
@@ -79,18 +79,19 @@ $(function () {
                         if (product.id == id) {
                             return `
                             <div class="card">
-                            <div class="card-body">
-                            <div class="row">
-                            <div class="col-12 col-sm-6 col-md-4 mb-3">
-                            <img src="${product.images}" class="card-img-top" alt="${product.name}">
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-8 mb-3">
-                            <h5 class="card-title text-capitalize">${product.name}</h5>
-                            <p class="card-text mb-5">${product.description}</p>
-                            <a href="https://wa.me/6282233435843?text=Saya+mau+beli+produk+ini%0D%0A${document.location.href}"
-                            class="btn btn-primary"> Beli Produk </a>
-                            </div>
-                            </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-4 mb-3">
+                                            <img src="${product.images}" class="card-img-top" alt="${product.name}">
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-8 mb-3">
+                                            <h5 class="card-title text-capitalize">${product.name}</h5>
+                                            <p class="card-text mb-5">${product.description}</p>
+                                            <a href="https://wa.me/6282233435843?text=Saya+mau+beli+produk+ini%0D%0A${document.location.href}"
+                                            class="btn btn-primary"> Beli Produk </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             `
                         }
