@@ -10,7 +10,7 @@ $(function () {
 
         if (url.link.includes('products')) {
             $.ajax({
-                url: origin + '/assets/data/products.json',
+                url: origin + '/andira-garment/assets/data/products.json',
                 method: 'GET',
                 success: (data) => {
                     const products = data.rows;
@@ -54,7 +54,7 @@ $(function () {
 
         if (url.link.includes('product-detail')) {
             $.ajax({
-                url: origin + '/assets/data/products.json',
+                url: origin + '/andira-garment/assets/data/products.json',
                 method: 'GET',
                 success: (data) => {
                     const products = data.rows;
