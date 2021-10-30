@@ -101,9 +101,6 @@ $(function () {
 
                     mapped.forEach((v, i) => {
                         productsHtml.push(card(v))
-                        $('meta[property="og:title"]').attr('content', v.name)
-                        $('meta[property="og:description"]').attr('content', v.description)
-                        $('meta[property="og:image"]').attr('content', v.images)
                     })
 
                     $(container).html(productsHtml)
